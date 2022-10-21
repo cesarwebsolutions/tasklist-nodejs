@@ -16,6 +16,11 @@ class UserController {
             { id, name, email }
         );
     }
+
+    async update(req, res){
+        console.log(req);
+        return res.json({ok: true});
+    }
 }
 
 export default new UserController();
